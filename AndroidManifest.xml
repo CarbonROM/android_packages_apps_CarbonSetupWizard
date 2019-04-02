@@ -46,6 +46,8 @@
         android:name="carbonrom.permission.FINISH_SETUP"
         android:protectionLevel="signatureOrSystem" />
 
+    <protected-broadcast android:name="org.carbonrom.setupwizard.CARBON_SETUP_COMPLETE"
+                         android:permission="carbonrom.permission.FINISH_SETUP"/>
     <protected-broadcast android:name="org.carbonrom.setupwizard.SETUP_FINISHED"
                          android:permission="carbonrom.permission.FINISH_SETUP"/>
 
