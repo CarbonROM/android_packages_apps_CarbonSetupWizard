@@ -33,5 +33,5 @@
     <color name="welcome_accent">@color/primary</color>
     <color name="header_condensed_bg">@color/primary</color>
     <color name="button_bar_background">@color/primary</color>
-    <color name="fingerprint_setup_text_color">#167C80</color>
+    <color name="biometric_setup_text_color">#167C80</color>
 </resources>
