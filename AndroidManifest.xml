@@ -41,6 +41,7 @@
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
     <uses-permission android:name="android.permission.BACKUP" />
     <uses-permission android:name="carbonrom.permission.FINISH_SETUP" />
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS" />
 
     <permission
         android:name="carbonrom.permission.FINISH_SETUP"
