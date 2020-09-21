@@ -34,7 +34,6 @@ import android.widget.ArrayAdapter;
 import android.widget.NumberPicker;
 import android.widget.Toast;
 
-import com.android.internal.telephony.MccTable;
 import com.android.internal.telephony.TelephonyIntents;
 
 import org.carbonrom.setupwizard.R;
@@ -224,10 +223,6 @@ public class LocaleActivity extends BaseSetupWizardActivity {
                 if (activeSubs == null || activeSubs.isEmpty()) {
                     return null;
                 }
-
-                // Fetch locale for active sim's MCC
-                int mcc = activeSubs.get(0).getMcc();
-                locale = MccTable.getLocaleFromMcc(activity, mcc, null);
 
                 // If that fails, fall back to preferred languages reported
                 // by the sim
