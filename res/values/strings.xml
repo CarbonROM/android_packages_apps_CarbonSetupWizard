@@ -70,7 +70,7 @@
     <string name="no">No</string>
     <string name="yes">Yes</string>
 
-    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="data_sim_name" formatted="false" >SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
 
     <string name="emergency_call">Emergency call</string>
 
