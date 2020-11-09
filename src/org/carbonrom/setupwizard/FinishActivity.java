@@ -129,11 +129,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
     }
 
     @Override
-    protected int getTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
-    @Override
     protected int getLayoutResId() {
         return R.layout.finish_activity;
     }
@@ -151,7 +146,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
     @Override
     public void onNavigateNext() {
-        applyForwardTransition(TRANSITION_ID_NONE);
+        applyForwardTransition(TRANSITION_ID_FADE);
         startFinishSequence();
     }
 

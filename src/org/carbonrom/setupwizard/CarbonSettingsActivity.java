@@ -163,11 +163,6 @@ public class CarbonSettingsActivity extends BaseSetupWizardActivity {
     }
 
     @Override
-    protected int getTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
-    @Override
     protected int getLayoutResId() {
         return R.layout.setup_carbon_settings;
     }
