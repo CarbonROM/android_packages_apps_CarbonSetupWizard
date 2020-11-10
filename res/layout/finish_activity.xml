@@ -15,42 +15,52 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<androidx.constraintlayout.widget.ConstraintLayout
+
+<org.carbonrom.setupwizard.widget.ScrimInsetsFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/primary">
+    android:fitsSystemWindows="true"
+    app:insetForeground="@android:color/transparent">
 
-    <include layout="@layout/header"
-        android:id="@+id/header"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <FrameLayout
-        android:id="@+id/animContainer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:paddingBottom="80dp"
-        app:layout_constraintBottom_toBottomOf="@id/finish_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/finish_text"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/content_margin_left"
-        android:paddingRight="@dimen/content_margin_left"
-        android:paddingBottom="80dp"
-        android:textSize="18sp"
-        android:text="@string/finish_summary"
-        app:layout_constraintBottom_toTopOf="@id/navigation_bar"
-        style="PageSummaryText" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/primary">
+
+        <include layout="@layout/header"
+            android:id="@+id/header"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/animContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="@id/finish_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/finish_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/content_margin_left"
+            android:paddingRight="@dimen/content_margin_left"
+            android:paddingBottom="80dp"
+            android:textSize="18sp"
+            android:text="@string/finish_summary"
+            app:layout_constraintBottom_toTopOf="@id/navigation_bar"
+            style="PageSummaryText" />
 
         <com.google.android.setupdesign.view.NavigationBar
             android:id="@+id/navigation_bar"
@@ -63,3 +73,12 @@
             style="@style/SudNavBarTheme" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView android:id="@+id/reveal"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/reveal"
+               android:visibility="invisible"/>
+
+</org.carbonrom.setupwizard.widget.ScrimInsetsFrameLayout>
