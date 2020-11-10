@@ -58,6 +58,8 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = FinishActivity.class.getSimpleName();
 
+    private ImageView mReveal;
+
     private EnableAccessibilityController mEnableAccessibilityController;
 
     private SetupWizardApp mSetupWizardApp;
@@ -79,6 +81,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
             logActivityState("onCreate savedInstanceState=" + savedInstanceState);
         }
         mSetupWizardApp = (SetupWizardApp) getApplication();
+        mReveal = (ImageView) findViewById(R.id.reveal);
         mEnableAccessibilityController =
                 EnableAccessibilityController.getInstance(getApplicationContext());
         setNextText(R.string.start);
@@ -155,6 +158,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
     private void finishSetup() {
         if (!mIsFinishing) {
             mIsFinishing = true;
+            setupRevealImage();
         }
     }
 
@@ -163,7 +167,61 @@ public class FinishActivity extends BaseSetupWizardActivity {
         hideBackButton();
         hideNextButton();
         finishSetup();
-        completeSetup();
+    }
+
+    private void setupRevealImage() {
+        final Point p = new Point();
+        getWindowManager().getDefaultDisplay().getRealSize(p);
+        final WallpaperManager wallpaperManager =
+                WallpaperManager.getInstance(this);
+        wallpaperManager.forgetLoadedWallpaper();
+        final Bitmap wallpaper = wallpaperManager.getBitmap();
+        Bitmap cropped = null;
+        if (wallpaper != null) {
+            cropped = Bitmap.createBitmap(wallpaper, 0,
+                    0, Math.min(p.x, wallpaper.getWidth()),
+                    Math.min(p.y, wallpaper.getHeight()));
+        }
+        if (cropped != null) {
+            mReveal.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            mReveal.setImageBitmap(cropped);
+        } else {
+            mReveal.setBackground(wallpaperManager
+                    .getBuiltInDrawable(p.x, p.y, false, 0, 0));
+        }
+        animateOut();
+    }
+
+    private void animateOut() {
+        int cx = (mReveal.getLeft() + mReveal.getRight()) / 2;
+        int cy = (mReveal.getTop() + mReveal.getBottom()) / 2;
+        int finalRadius = Math.max(mReveal.getWidth(), mReveal.getHeight());
+        Animator anim =
+                ViewAnimationUtils.createCircularReveal(mReveal, cx, cy, 0, finalRadius);
+        anim.setDuration(900);
+        anim.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+                mReveal.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        completeSetup();
+                    }
+                });
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {}
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {}
+        });
+        anim.start();
     }
 
     private void handleDarkTheme(SetupWizardApp setupWizardApp) {
