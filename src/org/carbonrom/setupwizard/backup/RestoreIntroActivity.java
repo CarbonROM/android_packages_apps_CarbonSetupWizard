@@ -16,7 +16,11 @@
 
 package org.carbonrom.setupwizard.backup;
 
+import android.app.Activity;
 import android.content.Intent;
+
+import com.google.android.setupcompat.util.WizardManagerHelper;
+
 import org.carbonrom.setupwizard.R;
 import org.carbonrom.setupwizard.SubBaseActivity;
 
@@ -30,6 +34,12 @@ public class RestoreIntroActivity extends SubBaseActivity {
         setNextAllowed(true);
 
         findViewById(R.id.intro_restore_button).setOnClickListener(v -> launchRestore());
+    }
+
+    @Override
+    protected void onNextPressed() {
+        Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
+        nextAction(NEXT_REQUEST, intent);
     }
 
     @Override

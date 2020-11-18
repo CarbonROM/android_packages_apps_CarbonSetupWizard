@@ -251,7 +251,6 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.carbonrom.setupwizard.CARBON_RESTORE_BACKUP"/>
