@@ -21,9 +21,6 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     setupcompat \
     setupdesign
 
-LOCAL_STATIC_JAVA_LIBRARIES := \
-    libphonenumber
-
 LOCAL_JAVA_LIBRARIES := \
     telephony-common
 
