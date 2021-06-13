@@ -113,9 +113,10 @@ public class CarbonSettingsActivity extends BaseSetupWizardActivity {
                 }
             }
         };
+        int ppStartIndex = policySummary.indexOf(privacy_policy);
         ss.setSpan(clickableSpan,
-                policySummary.length() - privacy_policy.length() - 1,
-                policySummary.length() - 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                ppStartIndex, ppStartIndex + privacy_policy.length(),
+                Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         TextView privacyPolicy = (TextView) findViewById(R.id.privacy_policy);
         privacyPolicy.setMovementMethod(LinkMovementMethod.getInstance());
         privacyPolicy.setText(ss);
