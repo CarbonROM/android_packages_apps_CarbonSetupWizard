@@ -85,4 +85,6 @@
     <string name="lockscreen_setup_title" product="default">Protéger votre téléphone</string>
     <string name="lockscreen_setup_summary"><b>\"Protéger l\'appareil\"</b>\" et exiger code, schéma ou mot de passe pour déverrouiller l\'écran\"</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurer</string>
+    <string name="intro_restore_title">Restaurer les applications et les données</string>
+    <string name="intro_restore_button">Restaurer à partir d\'une sauvegarde</string>
 </resources>

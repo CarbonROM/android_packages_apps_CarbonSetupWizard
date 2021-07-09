@@ -85,4 +85,8 @@
     <string name="lockscreen_setup_title" product="default">Proteggi il tuo telefono</string>
     <string name="lockscreen_setup_summary"><b>Proteggi il dispositivo</b> e richiedi PIN, sequenza o password per sbloccare schermo</string>
     <string name="lockscreen_setup_screen_lock_setup">Configura</string>
+    <string name="intro_restore_title">Ripristina app e dati</string>
+    <string name="intro_restore_subtitle" product="tablet">Se si dispone di un backup dall\'ultimo tablet CarbonROM, è possibile ripristinarlo qui.</string>
+    <string name="intro_restore_subtitle" product="default">Se si dispone di un backup dall\'ultimo telefono CarbonROM, è possibile ripristinarlo qui.</string>
+    <string name="intro_restore_button">Ripristino da backup</string>
 </resources>
