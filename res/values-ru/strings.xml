@@ -75,8 +75,8 @@
     <string name="settings_biometric_setup_details">Как следует блокировать экран?</string>
     <string name="fingerprint_setup_title">Настройка отпечатков пальцев</string>
     <string name="fingerprint_setup_summary">Чтобы использовать сканер отпечатков пальцев для разблокировки экрана, необходимо:</string>
-    <string name="biometric_setup_backup_lock_method">Настроить дополнительный способ разблокировки</string>
     <string name="fingerprint_setup_add_fingerprint">Добавить ваши отпечатки</string>
+    <string name="biometric_setup_backup_lock_method">Настроить дополнительный способ разблокировки</string>
     <string name="biometric_setup_screen_lock_setup">Настроить экран блокировки</string>
     <string name="sim_locale_changed">Обнаружена %1$s SIM-карта</string>
     <string name="settings_lockscreen_setup_title">Выбрать способ блокировки экрана</string>

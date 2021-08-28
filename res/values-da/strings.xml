@@ -34,6 +34,8 @@
     <string name="setup_datetime">Dato &amp; tid</string>
     <string name="setup_current_date">Aktuel dato</string>
     <string name="setup_current_time">Aktuel tid</string>
+    <string name="welcome_summary">Du må være ny! Før du kan begynde at bruge CarbonROM, er vi nødt til at få nogle ting på plads for at personliggøre din oplevelse. Start med at vælge dit sprog nedenfor.</string>
+    <string name="finish_summary">Nu hvor din enhed er sat op, kan du begynde at bruge din enhed og opleve alt CarbonROM har at tilbyde. God fornøjelse!</string>
     <string name="sim_missing_summary" product="tablet">Et SIM-kort blev ikke fundet i enheden. Læs de instruktioner der fulgte med enheden for informationer om hvordan du indsætter et SIM-kort.</string>
     <string name="sim_missing_summary" product="default">Et SIM-kort blev ikke fundet i enheden. Læs de instruktioner der fulgte med enheden for informationer om hvordan du indsætter et SIM-kort.</string>
     <string name="choose_data_sim_summary" product="tablet">Hvilket SIM-kort vil du bruge til data? Det valgte SIM-kort kan medføre netværksafgifter, da det skal bruges til at konfigurere enheden.</string>
@@ -62,6 +64,9 @@
     <string name="services_help_improve_cm">Hjælp med at forbedre <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> ved automatisk at sende diagnostik and brugsdata to LineageOS. Denne information kan ikke bruges til at identificere dig og giver en hånd til hold, som arbejder på ting som batterilevetid, app-ydeevne, and nye <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-funktioner.</string>
     <string name="services_os_nav_keys_label"><b>Brug navigationstaster på skærmen</b> i stedet for fysiske knapper.</string>
+    <string name="services_dark_theme"><b>Brug det mørke tema</b> hele tiden.</string>
+    <string name="services_customize_theme"><b>Tilpas dit tema</b> ved at vælge farver og ikoner.</string>
+    <string name="services_system_nav"><b>Ændre din navigationsstil</b> for at vælge, hvordan du bruger din enhed.</string>
     <string name="setup_unlock">Lås op</string>
     <string name="setup_device_locked">Denne enhed er blevet låst af brugeren.</string>
     <string name="setup_require_cyanogen_label"><b>Kræver adgangskoden til din konto</b> for at bruge enheden, selv efter en nulstilling til fabriksindstillinger.</string>
@@ -70,13 +75,18 @@
     <string name="settings_biometric_setup_details">Hvordan vil du gerne låse din skærm?</string>
     <string name="fingerprint_setup_title">Konfigurerring af fingeraftryk</string>
     <string name="fingerprint_setup_summary">Hvis du vil bruge din fingeraftryksensor til at låse din skærm op, skal du:</string>
-    <string name="biometric_setup_backup_lock_method">Konfigurere en sekundær låsemetode</string>
     <string name="fingerprint_setup_add_fingerprint">Tilføje dit fingeraftryk</string>
+    <string name="biometric_setup_backup_lock_method">Konfigurere en sekundær låsemetode</string>
     <string name="biometric_setup_screen_lock_setup">Konfigurere skærmlås</string>
     <string name="sim_locale_changed">%1$s SIM-kort fundet</string>
     <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
     <string name="settings_lockscreen_setup_details">Hvordan vil du gerne låse din skærm?</string>
+    <string name="lockscreen_setup_title" product="tablet">Beskyt din tablet</string>
     <string name="lockscreen_setup_title" product="default">Beskyt din telefon</string>
     <string name="lockscreen_setup_summary"><b>Beskyt denne enhed</b>, og kræv pinkode, mønster eller adgangskode for at låse skærmen op</string>
     <string name="lockscreen_setup_screen_lock_setup">Konfigurering</string>
+    <string name="intro_restore_title">Gendan apps og data</string>
+    <string name="intro_restore_subtitle" product="tablet">Hvis du har en sikkerhedskopi fra din sidste CarbonROM tablet, kan du gendanne den her.</string>
+    <string name="intro_restore_subtitle" product="default">Hvis du har en sikkerhedskopi fra din sidste CarbonROM telefon, kan du gendanne den her.</string>
+    <string name="intro_restore_button">Gendan fra sikkerhedskopi</string>
 </resources>

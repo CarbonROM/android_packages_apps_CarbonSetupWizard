@@ -75,8 +75,8 @@
     <string name="settings_biometric_setup_details">Ako chcete zamknúť obrazovku?</string>
     <string name="fingerprint_setup_title">Nastavenie odtlačkov prstov</string>
     <string name="fingerprint_setup_summary">Na použitie vášho snímača odtlačkov prstov na odomknutie obrazovky budete potrebovať:</string>
-    <string name="biometric_setup_backup_lock_method">Nastaviť alternatívny spôsob odomknutia</string>
     <string name="fingerprint_setup_add_fingerprint">Pridať váš odtlačok prsta</string>
+    <string name="biometric_setup_backup_lock_method">Nastaviť alternatívny spôsob odomknutia</string>
     <string name="biometric_setup_screen_lock_setup">Nastaviť zamknutie obrazovky</string>
     <string name="sim_locale_changed">Zistená %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
@@ -85,4 +85,8 @@
     <string name="lockscreen_setup_title" product="default">Chráňte svoj telefón</string>
     <string name="lockscreen_setup_summary"><b>Chrániť toto zariadenie</b> a pred odomknutím obrazovky vyžiadať kód PIN, gesto alebo heslo</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastaviť</string>
+    <string name="intro_restore_title">Obnoviť aplikácie a dáta</string>
+    <string name="intro_restore_subtitle" product="tablet">Ak máte zálohu z vášho posledného CarbonRom tabletu, môžete ju znovu obnoviť.</string>
+    <string name="intro_restore_subtitle" product="default">Ak máte zálohu z vášho posledného CarbonRom telefónu, môžete ju znovu obnoviť.</string>
+    <string name="intro_restore_button">Obnovenie zo zálohy</string>
 </resources>

@@ -70,8 +70,8 @@
     <string name="settings_biometric_setup_details">Como gostaria de bloquear o seu ecrã?</string>
     <string name="fingerprint_setup_title">Configuração de impressão digital</string>
     <string name="fingerprint_setup_summary">Para usar o seu sensor de impressão digital para desbloquear o ecrã, precisará de:</string>
-    <string name="biometric_setup_backup_lock_method">Definir um método de desbloqueio secundário</string>
     <string name="fingerprint_setup_add_fingerprint">Adicionar a sua impressão digital</string>
+    <string name="biometric_setup_backup_lock_method">Definir um método de desbloqueio secundário</string>
     <string name="biometric_setup_screen_lock_setup">Configuração do ecrã de bloqueio</string>
     <string name="sim_locale_changed">Cartão SIM %1$s detetado</string>
     <string name="settings_lockscreen_setup_title">Selecionar o tipo de bloqueio do ecrã</string>
