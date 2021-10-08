@@ -37,7 +37,7 @@ public class SetupWizardApp extends Application {
 
     public static final String ACTION_SETUP_COMPLETE = "org.carbonrom.setupwizard.CARBON_SETUP_COMPLETE";
     public static final String ACTION_FINISHED = "org.carbonrom.setupwizard.SETUP_FINISHED";
-    public static final String ACTION_SETUP_WIFI = "android.net.wifi.PICK_WIFI_NETWORK";
+    public static final String ACTION_SETUP_NETWORK = "android.settings.NETWORK_PROVIDER_SETUP";
     public static final String ACTION_SETUP_BIOMETRIC = "android.settings.BIOMETRIC_ENROLL";
     public static final String ACTION_SETUP_LOCKSCREEN = "com.android.settings.SETUP_LOCK_SCREEN";
     public static final String ACTION_RESTORE_FROM_BACKUP = "com.stevesoltys.seedvault.RESTORE_BACKUP";
@@ -68,7 +68,7 @@ public class SetupWizardApp extends Application {
     public static final String KEY_DARK_THEME = "dark_theme";
     public static final String KEY_BUTTON_BACKLIGHT = "pre_navbar_button_backlight";
 
-    public static final int REQUEST_CODE_SETUP_WIFI = 0;
+    public static final int REQUEST_CODE_SETUP_NETWORK = 0;
     public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 4;
     public static final int REQUEST_CODE_SETUP_BLUETOOTH= 5;
     public static final int REQUEST_CODE_SETUP_BIOMETRIC = 7;
