@@ -83,6 +83,7 @@
                   android:excludeFromRecents="true"
                   android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
                   android:immersive="true"
+                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden"
                   android:theme="@style/NoDisplay">
 
@@ -99,6 +100,7 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
+                  android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.carbonrom.setupwizard.CARBON_BLUETOOTH_SETUP" />
@@ -111,6 +113,7 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
+                  android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.carbonrom.setupwizard.CARBON_LOCALE" />
@@ -123,6 +126,7 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
+                  android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.carbonrom.setupwizard.CARBON_DATETIME" />
@@ -213,6 +217,7 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
+                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.carbonrom.setupwizard.CARBON_SETTINGS" />
@@ -251,6 +256,7 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
+                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.carbonrom.setupwizard.CARBON_RESTORE_BACKUP"/>
@@ -263,6 +269,7 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
+                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.carbonrom.setupwizard.CARBON_SETUP_COMPLETE" />
@@ -274,6 +281,7 @@
                   android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
                   android:excludeFromRecents="true"
                   android:immersive="true"
+                  android:exported="false"
                   android:label="@@string/activity_label_empty"
                   android:theme="@style/NoDisplay">
             <intent-filter>
@@ -290,7 +298,8 @@
                   android:launchMode="singleInstance"
                   android:theme="@style/NoDisplay"/>
 
-        <receiver android:name=".PartnerReceiver">
+        <receiver android:name=".PartnerReceiver"
+                  android:exported="true">
             <intent-filter>
                 <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />
                 <action android:name="com.google.android.tvsetup.action.PARTNER_CUSTOMIZATION" />
