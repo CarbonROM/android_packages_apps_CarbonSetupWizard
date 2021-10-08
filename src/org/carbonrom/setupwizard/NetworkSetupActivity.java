@@ -17,27 +17,27 @@
 
 package org.carbonrom.setupwizard;
 
-import static org.carbonrom.setupwizard.SetupWizardApp.ACTION_SETUP_WIFI;
-import static org.carbonrom.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_WIFI;
+import static org.carbonrom.setupwizard.SetupWizardApp.ACTION_SETUP_NETWORK;
+import static org.carbonrom.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_NETWORK;
 
 import android.content.Intent;
 
 import org.carbonrom.setupwizard.util.SetupWizardUtils;
 
-public class WifiSetupActivity extends WrapperSubBaseActivity {
+public class NetworkSetupActivity extends WrapperSubBaseActivity {
 
-    public static final String TAG = WifiSetupActivity.class.getSimpleName();
+    public static final String TAG = NetworkSetupActivity.class.getSimpleName();
 
 
     @Override
     protected void onStartSubactivity() {
         tryEnablingWifi();
-        Intent intent = new Intent(ACTION_SETUP_WIFI);
+        Intent intent = new Intent(ACTION_SETUP_NETWORK);
         if (SetupWizardUtils.hasLeanback(this)) {
             intent.setComponent(SetupWizardUtils.mTvwifisettingsActivity);
         }
         intent.putExtra(SetupWizardApp.EXTRA_PREFS_SHOW_BUTTON_BAR, true);
         intent.putExtra(SetupWizardApp.EXTRA_PREFS_SET_BACK_TEXT, (String) null);
-        startSubactivity(intent, REQUEST_CODE_SETUP_WIFI);
+        startSubactivity(intent, REQUEST_CODE_SETUP_NETWORK);
     }
 }

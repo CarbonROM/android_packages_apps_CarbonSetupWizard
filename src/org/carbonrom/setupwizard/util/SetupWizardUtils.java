@@ -57,12 +57,10 @@ import android.util.Log;
 import com.android.internal.util.cr.CrUtils;
 
 import org.carbonrom.setupwizard.BluetoothSetupActivity;
-import org.carbonrom.setupwizard.ChooseDataSimActivity;
+import org.carbonrom.setupwizard.NetworkSetupActivity;
 import org.carbonrom.setupwizard.BiometricActivity;
-import org.carbonrom.setupwizard.MobileDataActivity;
 import org.carbonrom.setupwizard.SetupWizardApp;
 import org.carbonrom.setupwizard.SimMissingActivity;
-import org.carbonrom.setupwizard.WifiSetupActivity;
 import org.carbonrom.setupwizard.wizardmanager.WizardManager;
 
 import java.util.ArrayList;
@@ -266,20 +264,11 @@ public class SetupWizardUtils {
         if (!hasBiometric(context)) {
             disableComponent(context, BiometricActivity.class);
         }
-        if (!hasTelephony(context)) {
-            disableComponent(context, MobileDataActivity.class);
+        if (!hasTelephony(context) || !simMissing()) {
             disableComponent(context, SimMissingActivity.class);
-            disableComponent(context, ChooseDataSimActivity.class);
         }
-        if (!SetupWizardUtils.isMultiSimDevice(context)) {
-            disableComponent(context, ChooseDataSimActivity.class);
-        } else if (simMissing()) {
-            disableComponent(context, MobileDataActivity.class);
-            disableComponent(context, ChooseDataSimActivity.class);
-        }
-        if (!SetupWizardUtils.hasWifi(context) ||
-            isEthernetConnected(context)) {
-            disableComponent(context, WifiSetupActivity.class);
+        if ((!hasWifi(context) && !hasTelephony(context)) || isEthernetConnected(context)) {
+            disableComponent(context, NetworkSetupActivity.class);
         }
     }
 
