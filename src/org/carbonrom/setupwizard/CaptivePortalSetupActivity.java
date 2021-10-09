@@ -22,6 +22,9 @@ import static org.carbonrom.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_CAPTIV
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkInfo;
+import android.os.Bundle;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -49,31 +52,33 @@ public class CaptivePortalSetupActivity extends WrapperSubBaseActivity {
             Log.e(TAG, "Not a valid url" + e);
         }
         CheckForCaptivePortalTask
-                .checkForCaptivePortal(mCaptivePortalUrl, this, true);
+                .checkForCaptivePortal(connectivity, mCaptivePortalUrl, this, true);
     }
 
     private static class CheckForCaptivePortalTask extends AsyncTask<Void, Void, Boolean> {
-
+        private final ConnectivityManager connectivity;
         private final URL captivePortalUrl;
         private final CaptivePortalSetupActivity captivePortalSetupActivity;
         private static CheckForCaptivePortalTask sTask = null;
         private String responseToken;
 
-        public CheckForCaptivePortalTask(URL captivePortalUrl,
+        public CheckForCaptivePortalTask(ConnectivityManager connectivity, URL captivePortalUrl,
                 CaptivePortalSetupActivity captivePortalSetupActivity) {
+            this.connectivity = connectivity;
             this.captivePortalUrl = captivePortalUrl;
             this.captivePortalSetupActivity = captivePortalSetupActivity;
         }
 
-        public static void checkForCaptivePortal(URL captivePortalUrl,
-                CaptivePortalSetupActivity captivePortalSetupActivity, boolean cancelAndRecreateIfRunning) {
+        public static void checkForCaptivePortal(ConnectivityManager connectivity, URL captivePortalUrl,
+                CaptivePortalSetupActivity captivePortalSetupActivity,
+                boolean cancelAndRecreateIfRunning) {
             if (sTask == null || sTask.getStatus() == Status.FINISHED) {
-                sTask = new CheckForCaptivePortalTask(captivePortalUrl, captivePortalSetupActivity);
+                sTask = new CheckForCaptivePortalTask(connectivity, captivePortalUrl, captivePortalSetupActivity);
                 sTask.execute();
 
             } else if (cancelAndRecreateIfRunning) {
                 sTask.cancel(true);
-                sTask = new CheckForCaptivePortalTask(captivePortalUrl, captivePortalSetupActivity);
+                sTask = new CheckForCaptivePortalTask(connectivity, captivePortalUrl, captivePortalSetupActivity);
                 sTask.execute();
             }
         }
@@ -110,22 +115,18 @@ public class CaptivePortalSetupActivity extends WrapperSubBaseActivity {
         @Override
         protected void onPostExecute(Boolean isPortal) {
             if (isPortal) {
-                final Context context = captivePortalSetupActivity.getApplicationContext();
-                responseToken = String.valueOf(new Random().nextLong());
-                final Intent intent = new Intent(
-                        ConnectivityManager.ACTION_CAPTIVE_PORTAL_SIGN_IN);
-                intent.putExtra(Intent.EXTRA_TEXT, responseToken);
-                intent.putExtra("status_bar_color",
-                        context.getResources().getColor(R.color.primary_dark));
-                intent.putExtra("action_bar_color", context.getResources().getColor(
-                        R.color.primary_dark));
-                intent.putExtra("progress_bar_color", context.getResources().getColor(
-                        R.color.accent));
-                captivePortalSetupActivity.startSubactivity(intent, REQUEST_CODE_SETUP_CAPTIVE_PORTAL);
-            } else {
-                captivePortalSetupActivity.finishAction(RESULT_OK);
-                captivePortalSetupActivity.finish();
+                Network[] networks = connectivity.getAllNetworks();
+
+                for (Network network : networks) {
+                    NetworkInfo networkInfo = connectivity.getNetworkInfo(network);
+                    if (networkInfo.isConnected()
+                            && networkInfo.getType() == ConnectivityManager.TYPE_WIFI) {
+                        connectivity.startCaptivePortalApp(network);
+                   }
+                }
             }
+            captivePortalSetupActivity.finishAction(RESULT_OK);
+            captivePortalSetupActivity.finish();
         }
     }
 
