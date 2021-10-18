@@ -37,7 +37,7 @@ android_app {
         "setupdesign",
     ],
 
-    libs: ["telephony-common", "framework-connectivity.impl"],
+    libs: ["telephony-common", "framework-connectivity.impl", "core-libart"],
 
     required: ["privapp_whitelist_org.carbonrom.setupwizard"],
 }
