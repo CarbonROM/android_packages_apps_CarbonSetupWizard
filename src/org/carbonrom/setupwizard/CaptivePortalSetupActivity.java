@@ -122,12 +122,10 @@ public class CaptivePortalSetupActivity extends WrapperSubBaseActivity {
                                 .getNetworkForType(ConnectivityManager.TYPE_WIFI));
                 intent.putExtra(ConnectivityManager.EXTRA_CAPTIVE_PORTAL,
                         new CaptivePortal(new ICaptivePortal.Stub() {
-                            @Override
+                           @Override
                             public void appResponse(int response) {}
                             @Override
                             public void logEvent(int eventId, String packageName) {}
-                            @Override
-                            public void appRequest(int request) {}
                         }));
                 intent.putExtra("status_bar_color",
                         context.getResources().getColor(R.color.primary_dark));
