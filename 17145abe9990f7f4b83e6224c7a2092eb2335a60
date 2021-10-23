@@ -17,6 +17,23 @@
       "message": "I\u0027m pretty confident in the other commits in the topic, but this one had a few upstream patchsets and ought to be double checked. I\u0027ll link upstream in a sec",
       "revId": "17145abe9990f7f4b83e6224c7a2092eb2335a60",
       "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7e9db9a_4d0ffbb5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 341
+      },
+      "writtenOn": "2021-10-23T10:22:54Z",
+      "side": 1,
+      "message": "Never mind, single patch set upstream: https://review.lineageos.org/c/LineageOS/android_packages_apps_SetupWizard/+/317595\n\nI tried to do this myself and couldn\u0027t figure out the appropriate way. I got close but decided to check LOS gerrit and found that",
+      "revId": "17145abe9990f7f4b83e6224c7a2092eb2335a60",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     }
   ]
 }
