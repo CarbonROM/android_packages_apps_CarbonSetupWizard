@@ -114,4 +114,8 @@
     <string name="intro_restore_subtitle" product="tablet">If you have a backup from your last CarbonROM tablet, you can restore it here.</string>
     <string name="intro_restore_subtitle" product="default">If you have a backup from your last CarbonROM phone, you can restore it here.</string>
     <string name="intro_restore_button">Restore from backup</string>
+
+    <!-- Assisted GPS -->
+    <string name="location_agps_access_summary">When location is on, <b>download satellite assistance data from the internet</b>, which can greatly improve the GPS startup performance.</string>
+
 </resources>
