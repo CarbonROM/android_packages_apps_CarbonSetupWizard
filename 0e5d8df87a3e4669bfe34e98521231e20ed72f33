@@ -1,4 +1,5 @@
 {
   "pushCert": "certificate version 0.1\npusher Christian Oder \u003cmyself5@carbonrom.org\u003e 1605020023 +0100\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_CarbonSetupWizard\nnonce 1605020023-8DDB7843D30F000B6D94F3F9B8CA5F8571C99039\n\n0000000000000000000000000000000000000000 0e5d8df87a3e4669bfe34e98521231e20ed72f33 refs/for/cr-8.0\n-----BEGIN PGP SIGNATURE-----\n\niQJKBAABCAA0FiEEAeKysoG6T9uCVbCUU4O8v8DvjyIFAl+qqXcWHG15c2VsZjVA\nY2FyYm9ucm9tLm9yZwAKCRBTg7y/wO+PIqLOD/9fBPunWZhnHzZdVSYz7DOuQABG\n/ygtHwUMIE90ujQxKHp12xTsrQb/LAZ9QevWa+NQoznWi/Z4PWjb9GZaxhQpm5nc\nHvW2QsbYUYyFYKHQponPFk3GUd520X9bsfNF/8w3JdNXE1u6ZA9VefPZnloJciKg\nlio5QAiGHFLP83gAeh790bMRJJTC6wORvfpGMYcOPuMGJvii7TJG0/h49RXIII+E\nOWjQNukcE3z/2dW92LJXaU8GPZ5NusCm0BNVDSTqsxSIigrAu7JWZuZVNB9xxU3g\nu/3uYCicBNdA8wFcaA3vJonaICRcDJyIZ72mohrQmO/HXxlmiwAPPfPcDrKezQFu\nG4T9ZkF0TLI7Q+csDalBkKo2bY+m1QbY8rV8DkrkL4wvsYU+bs24ksd6nX1J1OlS\nlLr0rjc1YshB1OxGBebPImFYNgnkmJy0OHStlUrbwME7+B0NXYUoxSHRqZ9l7sd+\nyysUGPVldj9AUvRUgPJC6cmTrm33NdoLW3kpMniRhd6dUqTb7SxLluUxBVqXi8VW\nGOe6DmosHAfBVDIkOQjbgEJmFg+CBYsk9pznsdTJNVArmSqUrjJyJg9I8dMxAbLV\n4FzXLoexLt7If74LAdtGDvLO7NbXy6SO1GP1e7YV2LTSzCTpeQiuqUxEq/X3cNeN\nP4hfdwoCPfcHiFhXZA\u003d\u003d\n\u003dQOR5\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [],
+  "submitRequirementResults": []
 }
