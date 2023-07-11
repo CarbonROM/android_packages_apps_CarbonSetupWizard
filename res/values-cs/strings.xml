@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017,2019 The LineageOS Project
+     Copyright (C) 2017-2020 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -45,10 +45,6 @@
     <string name="other_services_summary">Tyto služby Vám nabízí Google a Vy je můžete kdykoliv povolit či zakázat. Data budou použita v souladu se zásadami ochrany osobních údajů Google - <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="location_services_summary">Určování polohy umožňuje systému a dalším aplikacím sbírat data a používat je jako vaši přibližnou polohu. Aplikace tak může například vaši přibližnou polohu k nalezení blízkých kaváren.</string>
     <string name="location_access_summary"><b>Povolí aplikacím, které žádaly oprávnění</b> použít vaše informace o poloze. To může zahrnovat vaši aktuální, ale i minulé polohy.</string>
-    <string name="location_battery_saving"><b>Snížit spotřebu baterie</b> omezením počtu GPS aktualizací během hodiny.</string>
-    <string name="location_network"><b>Použít Wi\u2011Fi</b> pro zlepšení zjištění přibližné polohy.</string>
-    <string name="location_network_telephony"><b>Použít Wi\u2011Fi a mobilní sítě</b> pro zlepšení zjištění přibližné polohy.</string>
-    <string name="location_network_gms">Pro rychlejší určení vaší polohy <b>použijte lokační službu Google (Location Services)</b>. To znamená anonymní odesílání dat o poloze Googlu, i když žádné aplikace právě neběží.</string>
     <string name="setup_mobile_data">Zapnout mobilní data</string>
     <string name="setup_mobile_data_no_service">Žádná síť</string>
     <string name="setup_mobile_data_emergency_only">Pouze tísňová volání</string>
@@ -76,6 +72,9 @@
     <string name="fingerprint_setup_title">Nastavení otisku prstu</string>
     <string name="fingerprint_setup_summary">Chcete-li použít snímač otisků prstů pro odemknutí obrazovky, budete potřeba:</string>
     <string name="fingerprint_setup_add_fingerprint">Přidat otisk prstu</string>
+    <string name="face_setup_title">Nastavení obličeje</string>
+    <string name="face_setup_summary">Chcete-li použít váš obličej pro odemknutí obrazovky, budete potřebovat:</string>
+    <string name="face_setup_add_face">Přidejte svůj sken obličeje</string>
     <string name="biometric_setup_backup_lock_method">Nastavení alternativní metody odemčení</string>
     <string name="biometric_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
     <string name="sim_locale_changed">Zjištěna %1$s SIM</string>

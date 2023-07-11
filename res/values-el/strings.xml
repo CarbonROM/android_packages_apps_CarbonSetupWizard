@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017,2019 The LineageOS Project
+     Copyright (C) 2017-2020 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -43,10 +43,6 @@
     <string name="other_services_summary">Οι υπηρεσίες αυτές βάζουν τη Google να δουλεύει για εσάς, και μπορείτε να τις απενεργοποιήσετε οποιαδήποτε στιγμή. Τα δεδομένα θα χρησιμοποιηθούν σύμφωνα με την <xliff:g id="name" example="Privacy Policy">%s</xliff:g> της Google.</string>
     <string name="location_services_summary">Οι υπηρεσίες τοποθεσίας επιτρέπουν σε εφαρμογές συστήματος και άλλες εφαρμογές να συγκεντρώσουν και να χρησιμοποιήσουν δεδομένα όπως η κατά προσέγγιση τοποθεσία σας. Για παράδειγμα, μια εφαρμογή μπορεί να χρησιμοποιήσει την κατά προσέγγιση τοποθεσία σας για να εντοπίσει κοντινές καφετέριες.</string>
     <string name="location_access_summary"><b>Επιτρέπει σε εφαρμογές που έχουν ζητήσει την άδειά σας</b> να χρησιμοποιήσουν τις πληροφορίες τοποθεσίας σας. Αυτό μπορεί να περιλαμβάνει την τρέχουσα και τις προηγούμενες τοποθεσίες σας.</string>
-    <string name="location_battery_saving"><b>Μείωση κατανάλωσης μπαταρίας</b> περιορίζοντας τον αριθμό των ενημερώσεων GPS ανά ώρα.</string>
-    <string name="location_network"><b>Χρήση Wi-Fi</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας.</string>
-    <string name="location_network_telephony"><b>Χρήση Wi-Fi και δικτύων τηλεφωνίας</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας.</string>
-    <string name="location_network_gms"><b>Χρήση των υπηρεσιών τοποθεσίας της Google</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας. Αυτό σημαίνει ότι θα αποστέλλονται ανώνυμα δεδομένα τοποθεσίας στη Google, ακόμα και όταν δεν εκτελείται καμία εφαρμογή.</string>
     <string name="setup_mobile_data">Ενεργοποίηση δεδομένων κινητής τηλεφωνίας</string>
     <string name="setup_mobile_data_no_service">Καμία υπηρεσία</string>
     <string name="setup_mobile_data_emergency_only">Μόνο κλήσεις έκτακτης ανάγκης</string>

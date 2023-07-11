@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017,2019 The LineageOS Project
+     Copyright (C) 2017-2020 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -43,10 +43,6 @@
     <string name="other_services_summary">Estes serviços colocam o Google a trabalhar para si, e pode ligá-los ou desligá-los a qualquer momento. Os dados serão utilizados em conformidade com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do Google.</string>
     <string name="location_services_summary">Os serviços de localização permitem às aplicações de sistema e de terceiros reunir e utilizar dados tais como a sua localização aproximada. Por exemplo, uma aplicação pode usar a sua localização aproximada para localizar cafés ou bares nas proximidades.</string>
     <string name="location_access_summary"><b>Permitir que as aplicações que pediram a sua permissão</b> usem as suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
-    <string name="location_battery_saving"><b>Reduzir o consumo da bateria</b>, restringindo o número de atualizações GPS por hora.</string>
-    <string name="location_network"><b>Usar o Wi-Fi</b> para ajudar as aplicações a determinar a sua localização.</string>
-    <string name="location_network_telephony"><b>Usar o Wi-Fi e redes móveis</b> para ajudar as aplicações a determinar a sua localização.</string>
-    <string name="location_network_gms"><b>Usar o serviço de localização do Google</b> para ajudar as aplicações a determinar a sua localização. Isto implica o envio de dados anónimos de localização para o Google, mesmo quando nenhuma aplicação estiver a funcionar.</string>
     <string name="setup_mobile_data">Ligar os dados móveis</string>
     <string name="setup_mobile_data_no_service">Sem serviço</string>
     <string name="setup_mobile_data_emergency_only">Apenas chamadas de emergência</string>

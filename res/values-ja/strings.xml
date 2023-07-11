@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017,2019 The LineageOS Project
+     Copyright (C) 2017-2020 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -45,10 +45,6 @@
     <string name="other_services_summary">これらのサービスは Google アプリを動作させるもので、いつでも ON または OFF にすることができます。データは Google の <xliff:g id="name" example="Privacy Policy">%s</xliff:g> に従って使用されます。</string>
     <string name="location_services_summary">位置情報サービスは、おおよその位置情報などのデータの収集や使用をマップやサードパーティのアプリに許可します。例えば、アプリが最寄りの喫茶店を探すために、おおよその位置情報を使用するかもしれません。</string>
     <string name="location_access_summary">位置情報を使用する<b>権限を求めてきたアプリを許可します</b>。現在の位置情報と過去の位置情報を含む可能性があります。</string>
-    <string name="location_battery_saving">一時間あたりの GPS の更新回数を制限して<b>電池消費を抑えます</b>。</string>
-    <string name="location_network">アプリが位置情報を特定しやすくするために<b> Wi-Fi を使用します</b>。</string>
-    <string name="location_network_telephony">アプリが位置情報を特定しやすくするために<b> Wi-Fi とモバイルネットワークを使用します</b>。</string>
-    <string name="location_network_gms">アプリが位置情報を特定しやすくするために<b> Google の位置情報サービスを使用します</b>。アプリが実行されていなくても、匿名の位置情報データを Google に送信することになります。</string>
     <string name="setup_mobile_data">モバイルデータを ON</string>
     <string name="setup_mobile_data_no_service">サービスがありません</string>
     <string name="setup_mobile_data_emergency_only">緊急通報のみ</string>
@@ -74,7 +70,6 @@
     <string name="settings_biometric_setup_title">予備の画面のロックの種類を選択</string>
     <string name="settings_biometric_setup_details">どのように画面をロックしますか?</string>
     <string name="fingerprint_setup_title">指紋のセットアップ</string>
-    <string name="fingerprint_setup_summary">指紋センターを画面のロック解除に使用するには、以下のことを行う必要があります:</string>
     <string name="fingerprint_setup_add_fingerprint">指紋を追加</string>
     <string name="biometric_setup_backup_lock_method">予備のロック解除方法をセットアップ</string>
     <string name="biometric_setup_screen_lock_setup">画面のロックをセットアップ</string>

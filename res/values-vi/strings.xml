@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017,2019 The LineageOS Project
+     Copyright (C) 2017-2020 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -45,10 +45,6 @@
     <string name="other_services_summary">Các dịch vụ này giúp Google làm việc cho bạn, và bạn có thể bật hoặc tắt chúng bất kì lúc nào. Dữ liệu sẽ được sử dụng theo <xliff:g id="name" example="Privacy Policy">%s</xliff:g> của Google.</string>
     <string name="location_services_summary">Dịch vụ vị trí cho phép hệ thống và ứng dụng bên thứ ba thu thập và sử dụng dữ liệu chẳng hạn như vị trí gần đúng của bạn. Ví dụ, một ứng dụng có thể sử dụng vị trí gần đúng của bạn để xác định vị trí tiệm cà phê gần đó.</string>
     <string name="location_access_summary"><b>Cho phép những ứng dụng đã hỏi quyền</b> sử dụng thông tin vị trí của bạn. Những thông tin này có thể bao gồm vị trí hiện tại và trước đó của bạn.</string>
-    <string name="location_battery_saving"><b>Giảm tiêu hao pin</b> bằng cách hạn chế số lần cập nhật GPS mỗi giờ.</string>
-    <string name="location_network"><b>Sử dụng Wi-Fi</b> để giúp ứng dụng xác định vị trí của bạn.</string>
-    <string name="location_network_telephony"><b>Sử dụng Wi-Fi và mạng di động</b> để giúp ứng dụng xác định vị trí của bạn.</string>
-    <string name="location_network_gms"><b>Sử dụng dịch vụ vị trí của Google</b> giúp ứng dụng xác định vị trí của bạn. Điều này có nghĩa là gửi dữ liệu vị trí ẩn danh tới Google, kể cả khi không có ứng dụng nào đang chạy.</string>
     <string name="setup_mobile_data">Bật dữ liệu di động</string>
     <string name="setup_mobile_data_no_service">Không có dịch vụ</string>
     <string name="setup_mobile_data_emergency_only">Chỉ gọi khẩn cấp</string>
@@ -76,6 +72,9 @@
     <string name="fingerprint_setup_title">Thiết lập vân tay</string>
     <string name="fingerprint_setup_summary">Để sử dụng cảm biến vân tay của bạn để mở khóa màn hình của bạn, bạn sẽ cần phải:</string>
     <string name="fingerprint_setup_add_fingerprint">Thêm vân tay của bạn</string>
+    <string name="face_setup_title">Thiết lập khuôn mặt</string>
+    <string name="face_setup_summary">Để sử dụng khuôn mặt của bạn để mở khóa màn hình, bạn cần phải:</string>
+    <string name="face_setup_add_face">Thêm khuôn mặt của bạn</string>
     <string name="biometric_setup_backup_lock_method">Thiết lập phương thức mở khóa phụ</string>
     <string name="biometric_setup_screen_lock_setup">Thiết lập khóa màn hình</string>
     <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
@@ -86,7 +85,7 @@
     <string name="lockscreen_setup_summary"><b>Bảo vệ thiết bị này</b> và yêu cầu mã PIN, hình hoặc mật khẩu để mở khóa màn hình</string>
     <string name="lockscreen_setup_screen_lock_setup">Thiết lập</string>
     <string name="intro_restore_title">Khôi phục ứng dụng và dữ liệu</string>
-    <string name="intro_restore_subtitle" product="tablet">Nếu bạn có bản sao lưu từ máy tính bảng CarbonROM cuối cùng của mình, bạn có thể khôi phục nó tại đây.</string>
-    <string name="intro_restore_subtitle" product="default">Nếu bạn có bản sao lưu từ máy tính bảng CarbonROM cuối cùng của mình, bạn có thể khôi phục nó tại đây.</string>
-    <string name="intro_restore_button">Khôi phục từ kho lưu trữ</string>
+    <string name="intro_restore_subtitle" product="tablet">Nếu bạn có bản sao lưu từ máy tính bảng CarbonROM gần đây, bạn có thể khôi phục nó tại đây.</string>
+    <string name="intro_restore_subtitle" product="default">Nếu bạn có bản sao lưu từ điện thoại CarbonROM gần đây, bạn có thể khôi phục nó tại đây.</string>
+    <string name="intro_restore_button">Khôi phục từ bản sao lưu</string>
 </resources>
